@@ -1,0 +1,39 @@
+# .gitignore for R projects
+
+# R related files
+*.Rhistory
+*.RData
+*.Rproj.user
+
+server-list.log
+
+# R libraries
+renv/
+renv.lock
+packrat/
+
+# R markdown cache files
+*_cache/
+
+# Compiled files
+*.o
+*.so
+*.dll
+*.dylib
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*~
+*.bak
+*.log
+*.swp
+*.lock
+*/.directory
+*.tmp
+*.pdf
+*.gz
+
+# Rstudio files
+.Rproj
+.Ruserdata

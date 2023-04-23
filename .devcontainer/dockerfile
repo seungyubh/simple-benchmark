@@ -1,0 +1,7 @@
+# Use the official R base image
+FROM r-base:latest
+
+# Install necessary R packages
+RUN R -e "install.packages(c('microbenchmark', 'ggplot2'))"
+# Setting R language server for VS Code
+RUN R --silent --slave --no-save --no-restore -e "install.packages('languageserver', repos='https://cran.r-project.org/')" 
