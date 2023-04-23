@@ -1,4 +1,4 @@
-# Benchmark Result
+# Benchmark Result (ms)
 
 Thelio Desktop
 ```
