@@ -1,13 +1,13 @@
 # Benchmark Result
 
-Thelio
+Thelio Desktop
 ```
 ❯ docker run --rm kuangda/simple-benchmark
              expr     min       lq     mean   median       uq      max neval
 1 test_function() 103.934 109.5001 119.2899 112.0375 129.3007 158.3141   100
 ```
 
-MacOS
+MacBook with Apple Silicon
 ```
 ❯ docker run --rm  kuangda/simple-benchmark
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
