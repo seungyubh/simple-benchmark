@@ -7,12 +7,19 @@ Thelio Desktop
 1 test_function() 103.934 109.5001 119.2899 112.0375 129.3007 158.3141   100
 ```
 
-MacBook with Apple Silicon
+MacBook with Apple Silicon in x86 container
 ```
 ❯ docker run --rm  kuangda/simple-benchmark
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
              expr      min       lq     mean  median       uq      max neval
 1 test_function() 1348.919 1364.993 1380.693 1372.19 1388.345 1632.335   100
+```
+
+MacBook with Apple Silicon
+```
+> print(summary(benchmark_results))
+             expr      min       lq     mean  median      uq      max neval
+1 test_function() 147.7881 150.7482 155.9405 152.451 163.079 182.8134   100
 ```
 
 kimclust37
