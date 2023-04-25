@@ -26,6 +26,17 @@ test_function_lm <- function() {
   lm(y ~ X + 0)
 }
 
+test_function_pca <- function() {
+  set.seed(42)
+  r <- 20000
+  c <- 10000
+  mat <- matrix(rnorm(r*c), r, c)
+  mat_normalized <- scale(mat)
+  corr_matrix <- cor(mat_normalized)
+  data.pca <- princomp(corr_matrix)
+  print(format(object.size(mat) + object.size(mat_normalized) + object.size(corr_matrix) + object.size(data.pca), unit = "Mb"))
+}
+
 test_function <- function() {
   test_function_matrix_mul()
   test_function_iterative()
